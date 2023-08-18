@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./log-cad/style.css" />
+    <title>RadarGas</title>
+  </head>
+  <body id="body" class="background" style="overflow: hidden">
+    <div id="main">
+      <div
+        style="
+          height: 100%;
+          width: 500px;
+          padding: 25px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 25px;
+        "
+      >
+        <h1 style="color: #ff9100; font-size: 2.6rem">RadarGas</h1>
+        <h2 style="font-size: 1.8rem; color: white">
+          Encontre o melhor posto e preço da sua região
+        </h2>
+        <button onclick="loadLogin()">Entrar</button>
+      </div>
+    </div>
+    <div id="login" class="disapear login"></div>
+    <script>
+      fetch('./includes/logic/checklog.php')
+        .then(function (response) {
+          if (response.ok) return response.text()
+        })
+        .then(function (dados) {
+          if (dados == 'logged') {
+            window.location.href = './home.php'
+          }
+        })
+    </script>
+    <script src="./log-cad/script.js"></script>
+  </body>
+</html>

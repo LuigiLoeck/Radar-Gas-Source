@@ -1,0 +1,103 @@
+<div class="popup-close">
+  <svg
+    height="25px"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+    fill="#000000"
+    transform="rotate(45)"
+    id="close"
+  >
+    <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+    <g
+      id="SVGRepo_tracerCarrier"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+
+    <g id="SVGRepo_iconCarrier">
+      <title />
+      <g id="Complete">
+        <g data-name="add" id="add-2">
+          <g>
+            <line
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              x1="12"
+              x2="12"
+              y1="19"
+              y2="5"
+            />
+            <line
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              x1="5"
+              x2="19"
+              y1="12"
+              y2="12"
+            />
+          </g>
+        </g>
+      </g>
+    </g>
+  </svg>
+</div> 
+<section class="iteminfo">
+  <div class="about user">
+    <div class="text">
+      <h1>{{nome}}</h1>
+      <h2>{{email}}</h2>
+    </div>
+  </div>
+</section>
+<form class="form" id="form">
+  <input type="hidden" value="user" id="page" name="page">
+  <div class="input id">
+    <label for="id">Id: </label
+    ><input type="number" value="{{cod}}" id="id" name="id" readonly />
+  </div>
+  <div class="input nome">
+    <label for="nome">Nome: </label
+    ><input type="text" value="{{nome}}" id="nome" name="nome"/>
+  </div>
+  <div class="input email">
+    <label for="email">Email: </label
+    ><input type="text" value="{{email}}" id="email" name="email"/>
+  </div>
+  <div class="input cpf">
+    <label for="cpf">CPF: </label
+    ><input type="number" value="{{cpf}}" id="cpf" name="cpf"/>
+  </div>
+  <div class="input status">
+    <label for="">Status: </label>
+    <div class="status">
+      <input
+      type="radio"
+      value="1"
+      name="status"
+      id="radiotrue"
+      style="margin-right: 15px"
+      {{truecheck}}
+      />
+      <label for="radiotrue">Verificado</label>
+      <input
+      type="radio"
+      value="0"
+      name="status"
+      id="radiofalse"
+      {{falsecheck}}
+      />
+      <label for="radiofalse">Pendente</label>
+    </div>
+  </div>
+</form>
+<section class="btns">
+  <button class="update">Alterar</button>
+  <button class="delete">Deletar</button>
+</section>

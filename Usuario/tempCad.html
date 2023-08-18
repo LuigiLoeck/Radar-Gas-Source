@@ -1,0 +1,92 @@
+<div class="popup-close">
+  <svg
+    height="25px"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+    fill="#000000"
+    transform="rotate(45)"
+    id="close"
+  >
+    <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+    <g
+      id="SVGRepo_tracerCarrier"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+
+    <g id="SVGRepo_iconCarrier">
+      <title />
+      <g id="Complete">
+        <g data-name="add" id="add-2">
+          <g>
+            <line
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              x1="12"
+              x2="12"
+              y1="19"
+              y2="5"
+            />
+            <line
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              x1="5"
+              x2="19"
+              y1="12"
+              y2="12"
+            />
+          </g>
+        </g>
+      </g>
+    </g>
+  </svg>
+</div>
+<section class="iteminfo">
+  <div class="about user" style="display: flex">
+    <div class="text" style="margin: 0; text-align: center">
+      <h1>Cadastro de usuário</h1>
+    </div>
+  </div>
+</section>
+<form class="form" id="form">
+  <input type="hidden" value="user" id="page" name="page" />
+  <div class="input nome" style="display: inline-flex">
+    <label for="nome">Nome: </label><input type="text" id="nome" name="nome" />
+  </div>
+  <div class="input email" style="display: inline-flex">
+    <label for="email">Email: </label
+    ><input type="text" id="email" name="email" />
+  </div>
+  <div class="input cpf" style="display: inline-flex">
+    <label for="cpf">CPF: </label><input type="number" id="cpf" name="cpf" />
+  </div>
+  <div class="input cpf" style="display: inline-flex">
+    <label for="senha">Senha: </label
+    ><input type="text" id="senha" name="senha" />
+  </div>
+  <div class="input status" style="display: inline-flex;">
+    <label for="">Status: </label>
+    <div class="status" style="display: inline-flex;">
+      <input
+        type="radio"
+        value="1"
+        name="status"
+        id="radiotrue"
+        style="margin-right: 15px"
+      />
+      <label for="radiotrue">Verificado</label>
+      <input type="radio" value="0" name="status" id="radiofalse" />
+      <label for="radiofalse">Pendente</label>
+    </div>
+  </div>
+</form>
+<section class="btns">
+  <button id="cadastro">Cadastrar</button>
+</section>
