@@ -405,6 +405,7 @@ li {
 }
 
 .searchbar label {
+    font-size: calc(0.5vw + 10px);
   transform: translate(0, 2.25rem);
   transition: 0.4s ease;
 }
@@ -569,7 +570,7 @@ input[type='range']::-ms-thumb {
   left: 50%;
   transform: translate(-50%, -50%);
   min-width: 300px;
-  max-width: 40vw;
+  /* max-width: 40vw;*/
   background-color: #444444;
   border: solid black 2px;
   border-radius: 15px;
@@ -649,9 +650,8 @@ section.iteminfo {
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 1vw 0.5vw;
   border-radius: 10px;
-  /* width: 9vw; */
-  width: 160px;
-  height: 170px;
+  width: 9vw;
+  height: 15vh;
 }
 
 .cardcomb h1 {

@@ -335,7 +335,7 @@ if (isset($_POST["pesquisa"]) && isset($_POST['pagina'])) {
               <img src="./Images/<?php echo $band['img_band']?>" alt="Logo" />
               <div class="text">
                 <h1><?php echo $band['nm_band']?></h1>
-              </sdiv>
+              </div>
             </div>
             <div class="info">
               <h1>Postos: <?php echo $band['qntd']?></h1>

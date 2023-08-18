@@ -98,7 +98,7 @@ function crudFunction(event) {
             popup(
               'Senha alterada',
               'A senha da sua conta foi alterada com sucesso',
-              '../log-cad/login.html'
+              '../login.html'
             )
             break
 

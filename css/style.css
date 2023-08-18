@@ -120,6 +120,7 @@ li {
 } */
 
 /* ----------- Right menu -------------- */
+
 .pagelinks {
   display: flex;
   overflow: hidden;
@@ -853,8 +854,6 @@ section.btns {
   fill: orange;
 }
 
-/* modo escuro */
-
 body.lighttheme::-webkit-scrollbar-track {
   background-color: #4d5152;
 }
@@ -870,7 +869,9 @@ body.lighttheme,
 .lighttheme .input select,
 .lighttheme .input textarea,
 .lighttheme .input .status,
-.lighttheme .control select {
+.lighttheme .control select,
+.lighttheme .searchbar input,
+.lighttheme .filter button {
   background-color: #ffffff;
 }
 
@@ -925,8 +926,6 @@ body.lighttheme,
 }
 
 .lighttheme .dropdownuser,
-.lighttheme .searchbar input,
-.lighttheme .filter button,
 .lighttheme .card:hover,
 .lighttheme .control label {
   background-color: #ccc;
@@ -935,7 +934,7 @@ body.lighttheme,
 .lighttheme .dropdownuser li:hover,
 .lighttheme .content,
 .lighttheme .filter button:hover {
-  background-color: #999;
+  background-color: #ddd;
 }
 
 .lighttheme .status .status input:checked + label {

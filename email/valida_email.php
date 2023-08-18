@@ -18,12 +18,12 @@ if ($_GET['h']) {
       $msg = ['Cadastro concluido','A sua conta foi confirmada no sistema'];
     }
   }
-  include '../log-cad/cadastro.html';
+  include '../cadastro.html';
   echo '<link rel="stylesheet" href="../log-cad/style.css" />';
   echo '<script src="../log-cad/script.js"></script>';
   echo '
       <script>
-      popup("'.$msg[0].'","'.$msg[1].'","../log-cad/login.html")
+      popup("'.$msg[0].'","'.$msg[1].'","../login.html")
       
   </script>';
 }
